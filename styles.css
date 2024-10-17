@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a1f;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    color: #fff;    
+}
+
+.header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid blue;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0ff;
+}
+
+.buy-now {
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #ff0066;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #ff0066;
+    color: #000;
+}
+
+.course-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; /* Fixed spacing here */
+}
+
+.course-photo img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6); 
+}
+
+@media (max-width: 600px) {
+    .course-photo img {
+        max-width: 95%;
+    }
+}
+
+.description p {
+    padding: 20px;
+    text-align: center;
+    color: #fff;    
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    transition: transform 0.3s, color 0.3s;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.8); /* Changed to red shadow */
+}
+
+.description p:hover {
+    transform: scale(1.05);
+    color: #ff0066;
+}
+
+.description p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #0000ff; /* Changed to blue underline */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.description p:hover::after {
+    transform: scaleX(1);
+}
+
+/* Styles for the course info section */
+.course-info {
+    background-color: #1a1a3d; /* Darker background for contrast */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Blue shadow effect */
+    text-align: center;
+}
+
+.course-info h2 {
+    font-size: 24px;
+    color: #0ff;
+    margin-bottom: 20px;
+}
+
+.course-info p {
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.8);
+}
+.buy-now-large {
+    display: block; /* Make it a block element */
+    width: 200px; /* Set the width of the button */
+    margin: 40px auto; /* Center the button horizontally and add margin */
+    padding: 15px; /* Add padding for a larger click area */
+    color: #ffffff; /* Text color */
+    background-color: #ff0066; /* Background color */
+    border: 2px solid #ff0066; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Make it bold */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effects */
+}
+
+.buy-now-large:hover {
+    background-color: #0ff; /* Change background color on hover */
+    color: #000; /* Change text color on hover */
+}
