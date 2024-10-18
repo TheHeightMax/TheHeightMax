@@ -137,3 +137,81 @@ body {
     background-color: #0ff; /* Change background color on hover */
     color: #000; /* Change text color on hover */
 }
+.why-buy {
+    background: linear-gradient(135deg, #1a1a3d, #2e2e5b);
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 85%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 255, 0.3);
+    text-align: center;
+    color: #fff;
+}
+
+.why-buy h1 {
+    font-size: 32px;
+    color: #00ffff;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.why-buy-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.reason {
+    background-color: #2b2b5b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 28%;
+    min-width: 250px;
+    box-shadow: 0 5px 20px rgba(55, 0, 0, 0.8); /* Reddish-black shadow */
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.reason:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(55, 0, 0, 1); /* Darker reddish-black shadow on hover */
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff0066;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.reason h2 {
+    font-size: 22px;
+    color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+.reason p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .why-buy-content {
+        flex-direction: column;
+    }
+
+    .reason {
+        width: 80%;
+    }
+}
