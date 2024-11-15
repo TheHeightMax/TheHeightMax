@@ -99,3 +99,10 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
+.cut-text {
+    color: red; /* Color of the text */
+    text-decoration: line-through;
+    text-decoration-color: red; /* Strikethrough line color */
+    text-decoration-thickness: 2px; /* Thickness of the line */
+    text-decoration-skip-ink: auto; /* Ensures proper alignment */
+}
